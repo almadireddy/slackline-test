@@ -1,8 +1,10 @@
+import ShadowBox from "../ShadowBox/ShadowBox";
+
 const GraphContainer = () => {
   return (
-    <div>
-
-    </div>
+    <ShadowBox>
+      Graph
+    </ShadowBox>
   )
 }
 

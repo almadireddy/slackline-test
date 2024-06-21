@@ -1,8 +1,10 @@
+import ShadowBox from "../ShadowBox/ShadowBox";
+
 const TableContainer = () => {
   return (
-    <div>
-
-    </div>
+    <ShadowBox>
+      Table
+    </ShadowBox>
   )
 }
 
