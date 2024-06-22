@@ -5,7 +5,6 @@ import ShadowBox from "../ShadowBox/ShadowBox";
 import styles from './ProductDetails.module.scss'
 
 const ProductDetails = () => {
-  const status = useSelector((state: ProductState) => state.data.status);
   const data: Product[] = useSelector((state: ProductState) => state.data.data); // refactor into selecting specific index
 
   const product = data.length > 0 ? data[0] : null;
