@@ -5,11 +5,9 @@ import ShadowBox from "../ShadowBox/ShadowBox";
 import styles from './ProductDetails.module.scss'
 
 const ProductDetails = () => {
-  const data: Product[] = useSelector((state: ProductState) => state.data.data); // refactor into selecting specific index
+  const product: Product = useSelector((state: ProductState) => state.data.data[0]);
 
-  const product = data.length > 0 ? data[0] : null;
-
-  if (product === null) {
+  if (product === null || product === undefined) {
     return <p>Failed to load product</p>
   } 
 
@@ -28,10 +26,6 @@ const ProductDetails = () => {
               <span className={styles.tag}>{tag}</span>
             ))}
           </div>
-        </div>
-
-        <div className={styles.spacer}>
-          
         </div>
       </div>
     </ShadowBox>

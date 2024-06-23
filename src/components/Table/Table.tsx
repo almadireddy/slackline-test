@@ -39,7 +39,7 @@ const Table: React.FC<TableProps> = ({ sales }) => {
 			columns={cols}
 			data={sales}
       pagination
-      paginationPerPage={20}
+      paginationPerPage={10}
 		/>
 	);
 };

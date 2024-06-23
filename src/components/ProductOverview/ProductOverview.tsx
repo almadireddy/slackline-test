@@ -5,11 +5,12 @@ import styles from './ProductOverview.module.scss'
 import { ProductState } from "../../store/productStore";
 import Graph from "../Graph/Graph";
 import Table from "../Table/Table";
+import { Product } from "../../data/products";
 
 const ProductOverview = () => {
-  const productData = useSelector((state: ProductState) => state.data.data);  
+  const productData: Product = useSelector((state: ProductState) => state.data.data[0]);  
   
-  if (productData === undefined) {
+  if (productData === null || productData === undefined) {
     return (
       <p>Loading displays</p>
     )
@@ -25,10 +26,10 @@ const ProductOverview = () => {
         <DataWidgetContainer 
           title="Product Sales Graph" 
           className={styles.graphContainer}>
-          <Graph sales={productData[0].sales}></Graph>
+          <Graph sales={productData.sales}></Graph>
         </DataWidgetContainer>
         <DataWidgetContainer title="Product Sales Table">
-          <Table sales={productData[0].sales}></Table>
+          <Table sales={productData.sales}></Table>
         </DataWidgetContainer>
       </div>
     </div>
