@@ -17,7 +17,7 @@ const ProductDetails = () => {
     <ShadowBox className={styles.shadowbox}>
       <div className={styles.productDetails}>
         <div className={styles.detailSection}>
-          <img src={product.image}></img>
+          <img className={styles.productImage} src={product.image}></img>
           <h3 className={styles.title}>{product.title}</h3>
           <p className={styles.subtitle}>{product.subtitle}</p>
         </div>

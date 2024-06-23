@@ -23,7 +23,7 @@ export const fetchProducts = createAsyncThunk(
           reject("Failed!")
           return;
         }
-        resolve(products);
+        resolve(products) 
       }, 350);
     });
   }

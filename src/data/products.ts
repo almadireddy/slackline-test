@@ -47,7 +47,12 @@ export const products: Product[] = [
       "Includes a power base, 1 tall cup, 2 short cups, 1 flat blade and 1 emulsifying blade, 2 re-sealable lids, pocket nutritionist and manual with recipes",
       "This product is manufactured in compliance with US & Canadian Electrical Standards"
     ],
-    tags: ["Pantry", "Obsolete", "Blender", "Lightning Deal"],
+    tags: [
+      "Pantry",
+      "Obsolete",
+      "Blender",
+      "Lightning Deal"
+    ],
     sales: [
       {
         weekEnding: "2017-01-01",
@@ -251,13 +256,6 @@ export const products: Product[] = [
         wholesaleSales: 533123,
         unitsSold: 7,
         retailerMargin: 232085
-      },
-      {
-        weekEnding: "2017-07-23",
-        retailSales: 714227,
-        wholesaleSales: 802642,
-        unitsSold: 596,
-        retailerMargin: 362263
       },
       {
         weekEnding: "2017-07-23",
