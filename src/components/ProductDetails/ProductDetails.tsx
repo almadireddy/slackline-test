@@ -14,10 +14,25 @@ const ProductDetails = () => {
   } 
 
   return (
-    <ShadowBox>
+    <ShadowBox className={styles.shadowbox}>
       <div className={styles.productDetails}>
-        <img src={product.image}></img>
-        <p>{product.title}</p>
+        <div className={styles.detailSection}>
+          <img src={product.image}></img>
+          <h3 className={styles.title}>{product.title}</h3>
+          <p className={styles.subtitle}>{product.subtitle}</p>
+        </div>
+
+        <div className={styles.detailSection}>
+          <div className={styles.tagContainer}>
+            {product.tags.map((tag) => (
+              <span className={styles.tag}>{tag}</span>
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.spacer}>
+          
+        </div>
       </div>
     </ShadowBox>
   )

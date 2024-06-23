@@ -19,7 +19,6 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-        
       
       {status !== "succeeded" && 
         <div className='status-container'>
